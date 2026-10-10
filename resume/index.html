@@ -6,17 +6,24 @@
     <title>Resume | Jeffrey Kang</title>
     <link rel="stylesheet" href="../style.css">
 </head>
-<body>
+<body class="resume-page">
     <nav>
         <a href="../index.html">Home</a>
         <a href="../projects/index.html">Projects</a>
-        <a href="index.html" aria-current="page">Resume</a>
+        <a class="current" href="index.html" aria-current="page">Resume</a>
         <a href="../contact/index.html">Contact</a>
         <a href="https://github.com/jeffreykang03" target="_blank" rel="noopener noreferrer">GitHub</a>
     </nav>
 
     <header>
         <h1>Jeffrey Kang</h1>
+        <p class="resume-contact">
+            <a href="mailto:jak053@ucsd.edu">jak053@ucsd.edu</a>
+            <span aria-hidden="true">|</span>
+            <a href="https://www.linkedin.com/in/jeffrey-kang-a95717264" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <span aria-hidden="true">|</span>
+            <a href="https://github.com/jeffreykang03" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </p>
     </header>
 
     <main>
@@ -27,52 +34,78 @@
                     <h3>University of California, San Diego</h3>
                     <p>La Jolla, CA</p>
                 </header>
-                <p>Bachelor of Science in Data Science; minors in Music and Cognitive Science; GPA: 3.95</p>
-                <p><time datetime="2024-09">September 2024</time> – <time datetime="2028-06">June 2028</time></p>
-                <p>Relevant coursework: Data Structures and Algorithms, Research Methods and Statistics, Linear Algebra, Multivariable Calculus, Probability, Large Language Models/Transformers, and Data Management.</p>
-                <p>Honors: Provost Honors (<time datetime="2024">2024</time>–Present)</p>
+                <p>Bachelor of Science in Data Science | Minors in Music and Cognitive Science | GPA: 3.95</p>
+                <p><time datetime="2024-09">Sep. 2024</time> &ndash; <time datetime="2028-06">Jun. 2028</time></p>
+                <ul>
+                    <li>Relevant coursework: Data Structures and Algorithms, Research Methods and Statistics, Linear Algebra, Multivariable Calculus, Probability, Large Language Models/Transformers, and Data Management</li>
+                    <li>Honors: Provost Honors (2024&ndash;Present)</li>
+                </ul>
             </article>
         </section>
 
         <section aria-labelledby="experience-heading">
             <h2 id="experience-heading">Experience</h2>
             <article>
-                <header>
+                <header class="resume-entry-heading">
                     <h3>Software Engineering Intern</h3>
-                    <p><a href="https://www.nasa.gov/" target="_blank" rel="noopener noreferrer">NASA</a> | Mars, Outer Space</p>
-                    <p><time datetime="2026-06">June 2026</time> – <time datetime="2026-07">July 2026</time></p>
+                    <p class="resume-date"><time datetime="2026-06">Jun. 2026</time> &ndash; <time datetime="2026-09">Sep. 2026</time></p>
+                    <p class="resume-affiliation">DuoPeak Inc. | Palo Alto, CA</p>
                 </header>
                 <ul>
-                    <li>Solved a murder mystery on Moon Base Alpha </li> 
-                    <li>Made first contact with extraterrestial life</li>
-                    <li>Broke the third law of thermodynamics</li>
+                    <li>Developed LightGBM models predicting mobile app cohort ad-revenue ROI from early lifecycle data, scaling to 125 models across 10 prediction horizons through day 90; reduced ROI mean absolute error by 64% versus a naive baseline</li>
+                    <li>Engineered a bulk-inference pipeline achieving a 31x speedup on 1.9 million rows via vectorization and compiled tree inference; designed an automated model-retraining pipeline with paired bootstrap testing and a human-approval gate</li>
+                    <li>Built a procedural level generator converting images into playable levels; implemented a backtracking search to find valid solutions and reject unsolvable generations</li>
+                    <li>Implemented a headless Node.js batch-verification pipeline reusing the interactive app's own solver logic, processing images concurrently and validating against 100 production levels</li>
                 </ul>
             </article>
 
             <article>
-                <header>
-                    <h3>Fighter</h3>
-                    <p>Super Smash Brothers Ultimate | Nintendo</p>
-                    <p><time datetime="1984">Literally 1984</time> – Present</p>
+                <header class="resume-entry-heading">
+                    <h3>Research Assistant, Cognitive Development Lab</h3>
+                    <p class="resume-date"><time datetime="2026-01">Jan. 2026</time> &ndash; Present</p>
+                    <p class="resume-affiliation">University of California, San Diego | La Jolla, CA</p>
                 </header>
                 <ul>
-                    <li>Served meatballs to Mario, Luigi, Dr. Mario, and Wario</li>
-                    <li>Deleted Steve from the game</li>
-                    <li>Buffed Mega Man</li>
-                    <li>Nerfed Game and Watch</li>
+                    <li>Segmented and transcribed naturalistic infant-caregiver recordings using ELAN, producing human-labeled reference data for reliability coding and developmental language research</li>
+                    <li>Contributed benchmark annotations used to evaluate Whisper across multilingual sessions; team analysis found approximately 65% accuracy on English and partially English recordings</li>
                 </ul>
             </article>
 
             <article>
-                <header>
-                    <h3>Cook's Assistant</h3>
-                    <p>The Obra Dinn | The Atlantic Ocean</p>
-                    <p><time datetime="1802-09">September 1802</time> – <time datetime="1807-03">March 1807</time></p>
+                <header class="resume-entry-heading">
+                    <h3>Instructional Assistant</h3>
+                    <p class="resume-date"><time datetime="2025-09">Sep. 2025</time> &ndash; Present</p>
+                    <p class="resume-affiliation">Halıcıoğlu Data Science Institute | University of California, San Diego | La Jolla, CA</p>
                 </header>
                 <ul>
-                    <li>Foiled Edward Nichols' plans of mutiny</li>
-                    <li>1v2'ed the crab-riders with a revolver</li>
-                    <li>Clutched out the 4v1 against the captain to take back the ship, stayed alive until the return</li>
+                    <li>Supported an introductory data science course serving 600+ students, teaching Python, Pandas, statistics, and data visualization through weekly discussion sections, office hours, and review sessions</li>
+                    <li>Led a weekly discussion pod of 25 students, guiding students through programming and statistical problems and providing individualized debugging and conceptual support</li>
+                    <li>Maintained the course practice website and managed Git-based publishing workflows for lectures and discussion materials; developed and beta-tested assessments using Jupyter Notebooks and Overleaf</li>
+                </ul>
+            </article>
+
+            <article>
+                <header class="resume-entry-heading">
+                    <h3>Developer Intern</h3>
+                    <p class="resume-date"><time datetime="2025-06">Jun. 2025</time> &ndash; <time datetime="2025-08">Aug. 2025</time></p>
+                    <p class="resume-affiliation">San Diego Supercomputer Center | La Jolla, CA</p>
+                </header>
+                <ul>
+                    <li>Developed a full-stack study group finder app; served as primary database manager and backend developer</li>
+                    <li>Designed and implemented a relational PostgreSQL schema; containerized services with Docker for cloud deployment on OpenStack</li>
+                    <li>Built and documented a Node.js and Express.js REST API with 17+ endpoints for authentication, profile management, and event creation</li>
+                </ul>
+            </article>
+
+            <article>
+                <header class="resume-entry-heading">
+                    <h3>Technical Writer</h3>
+                    <p class="resume-date"><time datetime="2024-10">Oct. 2024</time> &ndash; Present</p>
+                    <p class="resume-affiliation">Data Science Student Society @ UCSD</p>
+                </header>
+                <ul>
+                    <li>Authored technical articles on transformers, diffusion models, and reinforcement learning for a general audience (see writing portfolio)</li>
+                    <li>Hosted a podcast episode interviewing UCSD Professor Sam Lau on AI research and the role of generative AI in education</li>
                 </ul>
             </article>
 
@@ -81,8 +114,9 @@
         <section aria-labelledby="skills-heading">
             <h2 id="skills-heading">Technical Skills</h2>
             <ul>
-                <li><strong>Languages:</strong> English, Chinese, Formosan, Spanish, Polish, Austrian</li>
-                <li><strong>Frameworks and tools:</strong> I ran out of ideas</li>
+                <li><strong>Languages:</strong> Python, SQL, C++, Java, JavaScript</li>
+                <li><strong>Frameworks/Tools:</strong> Node.js, Express.js, React, Docker, PostgreSQL, Git, OpenStack</li>
+                <li><strong>Data Science/ML:</strong> Pandas, NumPy, Matplotlib, scikit-learn, LightGBM</li>
             </ul>
         </section>
     </main>
