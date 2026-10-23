@@ -102,13 +102,34 @@ form button {
 	grid-row: span 3;
 }
 
-.projects h2 {
+.projects :is(h2, h3) {
 	margin: 0;
 }
 
 .projects img {
 	width: 100%;
 	height: auto;
+}
+
+#profile-stats dl {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 0.25em 1em;
+	margin: 0;
+}
+
+#profile-stats dt {
+	grid-row: 1;
+	color: color-mix(in oklch, canvastext 65%, canvas);
+	font-size: 80%;
+	text-transform: uppercase;
+}
+
+#profile-stats dd {
+	grid-row: 2;
+	margin: 0;
+	font-size: 150%;
+	font-weight: bold;
 }
 
 .resume-page > header {
