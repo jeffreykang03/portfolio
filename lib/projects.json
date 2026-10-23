@@ -6,37 +6,19 @@
     "description": "At DuoPeak, developed LightGBM models predicting mobile app cohort ad-revenue ROI from early lifecycle data, scaling to 125 models across 10 prediction cutoffs through day 90 and reducing ROI mean absolute error by 64% versus a naive baseline."
   },
   {
-    "title": "Bulk-Inference & Retraining Pipeline",
-    "year": "2026",
-    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "Engineered a bulk-inference pipeline with a 31x speedup on 1.9 million rows via vectorization and compiled tree inference, plus an automated model-retraining pipeline with paired bootstrap testing and a human-approval gate."
-  },
-  {
-    "title": "Image-to-Level Generator",
+    "title": "Image-to-Level Pixel Flow Generator",
     "year": "2026",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
     "description": "Built a procedural level generator that converts images into playable levels, using a backtracking search to find valid solutions and reject unsolvable generations."
   },
   {
-    "title": "Headless Level Verification",
+    "title": "Pixel Flow Level Verification",
     "year": "2026",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
     "description": "Implemented a headless Node.js batch-verification pipeline reusing the interactive app's own solver logic, processing images concurrently and validating against 100 production levels."
   },
   {
-    "title": "Whisper Speech Benchmark",
-    "year": "2026",
-    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "In the UCSD Cognitive Development Lab, segmented and transcribed infant-caregiver recordings in ELAN and contributed benchmark annotations used to evaluate Whisper, which reached about 65% accuracy on English recordings."
-  },
-  {
-    "title": "Personal Portfolio Website",
-    "year": "2026",
-    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "This site: hand-written HTML and CSS with a JavaScript-generated nav, a dark mode switch, and projects rendered from a JSON data file."
-  },
-  {
-    "title": "Intro Data Science Course Website",
+    "title": "practice.dsc10.com",
     "year": "2025",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
     "description": "As an Instructional Assistant at HDSI, maintained the course practice website and Git-based publishing workflows for an introductory data science course serving 600+ students."
@@ -58,6 +40,12 @@
     "year": "2024",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
     "description": "Authored technical articles for the Data Science Student Society on transformers, diffusion models, and reinforcement learning, written for a general audience."
+  },
+  {
+    "title": "Moon Landing",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Engineered a bulk-inference pipeline with a 31x speedup on 1.9 million rows via vectorization and compiled tree inference, plus an automated model-retraining pipeline with paired bootstrap testing and a human-approval gate."
   },
   {
     "title": "Tempor incididunt labore",
