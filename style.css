@@ -174,7 +174,7 @@ form button {
 }
 
 .selected {
-	--color: oklch(60% 45% 0) !important;
+	--color: oklch(50% 0.22 300) !important;
 
 	&:is(path) {
 		fill: var(--color);
