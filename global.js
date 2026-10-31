@@ -112,7 +112,7 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
   containerElement.innerHTML = '';
 
   if (!projects || projects.length === 0) {
-    containerElement.innerHTML = '<p>No projects yet. Check back soon!</p>';
+    containerElement.innerHTML = '<p>No projects to show.</p>';
     return;
   }
 

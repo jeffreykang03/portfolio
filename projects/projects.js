@@ -55,11 +55,6 @@ function renderPieChart(projectsGiven) {
     return { value: count, label: year };
   });
 
-  // If the search removed the selected year, clear the selection
-  if (!data.some((d) => d.label === selectedYear)) {
-    selectedYear = null;
-  }
-
   let sliceGenerator = d3.pie().value((d) => d.value).sort(null);
   let arcData = sliceGenerator(data);
   let arcs = arcData.map((d) => arcGenerator(d));
