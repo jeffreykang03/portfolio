@@ -26,10 +26,7 @@ function matchesQuery(project) {
   return values.includes(query.toLowerCase());
 }
 
-// Extra credit (Step 5.4 fix): ONE function applies BOTH filters.
-// The lab's version filtered `projects` separately in the search handler
-// (query only) and in the click handler (year only), so whichever ran last
-// threw away the other filter.
+// Extra credit 
 function getFilteredProjects() {
   return projects.filter(
     (project) =>
