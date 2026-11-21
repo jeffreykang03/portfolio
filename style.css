@@ -514,7 +514,7 @@ circle.selected {
 }
 
 #scatter-story .step {
-	padding-bottom: 60vh;
+	padding-block: 1em 15vh;
 }
 
 #chart :is(.x-axis, .y-axis) {

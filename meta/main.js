@@ -200,7 +200,15 @@ function renderScatterPlot(data, commits) {
 function updateScatterPlot(data, commits) {
   const svg = d3.select('#chart').select('svg');
 
-  xScale.domain(d3.extent(commits, (d) => d.datetime)).nice();
+  let [start, end] = d3.extent(commits, (d) => d.datetime);
+
+  // With a single commit the domain has no width, so pad it by a day each side
+  if (+start === +end) {
+    start = d3.timeDay.offset(start, -1);
+    end = d3.timeDay.offset(end, 1);
+  }
+
+  xScale.domain([start, end]).nice();
 
   const xAxisGroup = svg.select('g.x-axis');
   xAxisGroup.selectAll('*').remove();
@@ -229,6 +237,9 @@ function updateScatterPlot(data, commits) {
       d3.select(event.currentTarget).style('fill-opacity', 0.7);
       updateTooltipVisibility(false);
     });
+
+  // Re-apply the current brush so the selection matches the redrawn dots
+  brushed({ selection: d3.brushSelection(svg.node()) });
 }
 
 function createBrushSelector(svg) {
